@@ -1,0 +1,111 @@
+.heading body {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: bold;
+}
+
+/* Reset default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  background-color: #007B5F; /* Green hover and active effect */
+  border-radius: 5px;
+}
+
+/* Body and Background */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  margin: 0;
+  height: 100vh;
+}
+
+/* Content Section */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+}
+
+/* Book Outer Container */
+.book {
+  padding: 100px;
+  background-color: #2b2a2a;
+  border: 10px solid white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Essay Container */
+.essay-container {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.heading {
+  position: absolute;
+  top: -25px;
+  left: 20px;
+  background-color: #ff1493;
+  color: black;
+  font-weight: bold;
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  margin-top: 10px;
+  height: 60px
+}
+
+/* Essay Text */
+.essay p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 1em;
+  margin-top: 40px;
+}
+ 

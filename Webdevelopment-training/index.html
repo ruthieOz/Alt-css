@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-Up Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Web Development Training</a></li>
+      <li><a href="../Huckleberry/index.html">Huckleberry</a></li>
+      <li><a href="../Novuswatch/index.html">Novus Watch</a></li>
+      <li><a href="../Otteressay/index.html" class="active">Otter Essay</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sign-Up Form -->
+  <div class="form-container">
+    <form class="signup-form">
+      <div class="form-group">
+        <label for="activity-level">Activity Level</label>
+        <select id="activity-level" name="activity-level" required>
+          <option value="" disabled selected>Select here</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit" class="register-button">Register</button>
+    </form>
+  </div>
+</body>
+</html>
