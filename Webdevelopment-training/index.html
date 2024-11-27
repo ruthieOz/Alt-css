@@ -3,37 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign-Up Page</title>
+  <title>Responsive Sign-Up Form</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Navigation Bar -->
   <nav class="navbar">
     <ul>
-      <li><a href="../Otteressay/index.html" class="active">Otter Essay</a></li>
+      <li><a href="../Otteressay/index.html">Otter Essay</a></li>
       <li><a href="../Huckleberry/index.html">Huckleberry</a></li>
       <li><a href="../Novuswatch/index.html">Novus Watch</a></li>
-      <li><a href="index.html">Web Development Training</a></li>    </ul>
+      <li><a href="index.html">Web Development Training</a></li>
+    </ul>
   </nav>
 
-  <!-- Sign-Up Form -->
-  <div class="form-container">
-    <form class="signup-form">
-      <div class="form-group">
-        <label for="activity-level">Activity Level</label>
-        <select id="activity-level" name="activity-level" required>
-          <option value="" disabled selected>Select here</option>
-          <option value="low">Low</option>
-          <option value="medium">Medium</option>
-          <option value="high">High</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password" required>
-      </div>
-      <button type="submit" class="register-button">Register</button>
-    </form>
+  <div class="container">
+    <!-- Info Section -->
+    <div class="info-section">
+      <img src="Logo.png" alt="Logo" class="logo">
+      <h1>For Individuals</h1>
+      <p>
+        Start benefiting from the wellness experience. For companies looking
+        at increasing productivity, and improving organization wellness.
+      </p>
+    </div>
+
+    <!-- Form Section -->
+    <div class="form-section">
+      <form class="signup-form">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" placeholder="Enter first name">
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" placeholder="Enter last name">
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender">
+            <option>Select here</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob">
+        </div>
+        <div class="form-group">
+          <label for="weight">Weight (KG)</label>
+          <input type="number" id="weight" placeholder="Enter weight">
+        </div>
+        <div class="form-group">
+          <label for="height">Height (CM)</label>
+          <input type="number" id="height" placeholder="Enter height">
+        </div>
+        <div class="form-group">
+          <label for="activity-level">Activity Level</label>
+          <select id="activity-level">
+            <option>Select here</option>
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password">
+        </div>
+        <button type="submit" class="register-button">Register</button>
+        <p class="terms">
+          By clicking Register, you agree to our <a href="#">Terms of Use</a> and our
+          <a href="#">Privacy Policy</a>.
+        </p>
+      </form>
+    </div>
   </div>
 </body>
 </html>

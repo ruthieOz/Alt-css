@@ -1,182 +1,188 @@
-/* General Body Styling */
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-}
-
-/* Navigation Bar */
-.navbar {
-  background-color: #333;
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Content Container */
+.container {
+  display: flex;
   gap: 20px;
-}
-
-.navbar ul li {
-  display: inline;
-}
-
-.navbar ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease;
-}
-
-.navbar ul li a:hover,
-.navbar ul li a.active {
-  background-color: #007B5F;
-  border-radius: 5px;
-}
-
-/* Form Container */
-.form-container {
-  background-color: white;
-  padding: 30px;
-  width: 100%;
-  max-width: 400px;
+  max-width: 1000px;
+  background-color: #fff;
+  padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  margin-top: 50px;
+  border-radius: 8px;
+  margin-top: 20px; /* Ensure some spacing below the navbar */
 }
 
-/* Form Styling */
-.signup-form {
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Info Section */
+.info-section {
+  flex: 1;
+  background: linear-gradient(135deg, #a7bebe, #7b989b);
+  color: white;
+  padding: 40px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.info-section .logo {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.info-section h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.info-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Form Section */
+.form-section {
+  flex: 2;
+  padding: 40px;
+}
+
+.signup-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 5px;
 }
 
 .form-group label {
-  font-size: 14px;
+  margin-bottom: 5px;
   font-weight: bold;
-  color: #333;
+  font-size: 0.9rem;
 }
 
-.form-group select,
-.form-group input {
+.form-group input,
+.form-group select {
   padding: 10px;
-  font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  outline: none;
-  transition: border-color 0.3s ease;
-}
-
-.form-group select:focus,
-.form-group input:focus {
-  border-color: #007B5F;
+  font-size: 1rem;
 }
 
 .register-button {
-  background-color: #007B5F;
+  grid-column: span 2;
+  padding: 15px;
+  background-color: #0d9e56;
   color: white;
   border: none;
-  padding: 10px;
-  font-size: 16px;
   border-radius: 5px;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 .register-button:hover {
-  background-color: #005f46;
+  background-color: #09694c;
+}
+
+.terms {
+  grid-column: span 2;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.terms a {
+  color: #0097a7;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .navbar ul {
-      flex-direction: column; /* Stack navigation items vertically */
-      gap: 10px;
-      padding: 0 10px;
+  .container {
+    flex-direction: column;
   }
 
-  .navbar ul li a {
-      font-size: 14px;
-      padding: 8px 15px; /* Reduce padding on smaller screens */
+  .info-section {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
   }
 
-  .form-container {
-      padding: 20px; /* Reduce padding for smaller screens */
-      margin-top: 30px;
+  .info-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .form-section {
+    padding: 20px;
   }
 
   .signup-form {
-      gap: 15px; /* Adjust gap between form elements */
-  }
-
-  .form-group label {
-      font-size: 13px;
-  }
-
-  .form-group select,
-  .form-group input {
-      font-size: 13px;
-      padding: 8px;
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 
   .register-button {
-      font-size: 14px;
-      padding: 8px;
+    grid-column: span 1;
+  }
+
+  .terms {
+    grid-column: span 1;
   }
 }
 
 @media (max-width: 480px) {
-  .navbar ul {
-      padding: 0; /* Remove extra padding for very small screens */
+  .info-section p {
+    font-size: 0.9rem;
   }
 
-  .navbar ul li a {
-      font-size: 12px;
-      padding: 6px 10px;
+  .form-section {
+    padding: 15px;
   }
 
-  .form-container {
-      padding: 15px; /* Reduce padding for very small screens */
-      border-radius: 5px; /* Slightly less rounded corners */
-  }
-
-  .signup-form {
-      gap: 10px;
-  }
-
-  .form-group label {
-      font-size: 12px;
-  }
-
-  .form-group select,
-  .form-group input {
-      font-size: 12px;
-      padding: 6px;
+  .form-group input,
+  .form-group select {
+    font-size: 0.9rem;
+    padding: 8px;
   }
 
   .register-button {
-      font-size: 12px;
-      padding: 6px;
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .terms {
+    font-size: 0.75rem;
   }
 }
