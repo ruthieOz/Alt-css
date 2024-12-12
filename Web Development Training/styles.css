@@ -15,6 +15,49 @@ body {
   padding: 20px;
 }
 
+/* Navigation Bar Styles */
+.navbar {
+  position: fixed;
+  /* Make it stick to the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Full width */
+  /* z-index: 1000; Ensure it stays above other elements */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #638373;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Optional: Adds a shadow for better visibility */
+}
+
+.navbar-brand a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar-links li a:hover {
+  color: #c8e6c9;
+}
+
 /* Content Container */
 .container {
   display: flex;
@@ -24,7 +67,8 @@ body {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  margin-top: 20px; /* Ensure some spacing below the navbar */
+  margin-top: 20px;
+  /* Ensure some spacing below the navbar */
 }
 
 .container {
@@ -100,7 +144,7 @@ body {
 .register-button {
   grid-column: span 2;
   padding: 15px;
-  background-color: #0d9e56;
+  background-color: #09694c;
   color: white;
   border: none;
   border-radius: 5px;
@@ -110,7 +154,7 @@ body {
 }
 
 .register-button:hover {
-  background-color: #09694c;
+  background-color: #0d9e56;
 }
 
 .terms {
@@ -129,6 +173,25 @@ body {
 }
 
 /* Responsive Design */
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    background-color: #0d9e56;
+    position: absolute;
+    top: 50px;
+    /* Adjust based on navbar height */
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .navbar-checkbox:checked~.navbar-links {
+    display: flex;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;

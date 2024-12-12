@@ -2,11 +2,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #d6d6e8; /* Matches the background from the image */
+  background-color: #d6d6e8;
+  /* Matches the background from the image */
   display: flex;
-  flex-direction: column; /* Stack navbar and content vertically */
+  flex-direction: column;
+  /* Stack navbar and content vertically */
   align-items: center;
-  min-height: 100vh; /* Ensure content covers the viewport height */
+  min-height: 100vh;
+  /* Ensure content covers the viewport height */
 }
 
 /* Navigation Bar Styling */
@@ -15,9 +18,12 @@ body {
   padding: 10px 0;
   position: sticky;
   top: 0;
-  width: 100%; /* Full width for the navbar */
-  z-index: 1000; /* Ensures it's on top of other elements */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+  width: 100%;
+  /* Full width for the navbar */
+  z-index: 1000;
+  /* Ensures it's on top of other elements */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for separation */
 }
 
 .navbar ul {
@@ -43,7 +49,8 @@ body {
 
 .navbar ul li a:hover,
 .navbar ul li a.active {
-  background-color: #007B5F; /* Green hover and active effect */
+  background-color: #007B5F;
+  /* Green hover and active effect */
   border-radius: 5px;
 }
 
@@ -52,9 +59,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; /* Add space below the navbar */
-  flex-wrap: wrap; /* Ensures responsiveness for multiple cards */
-  gap: 20px; /* Space between cards */
+  margin-top: 20px;
+  /* Add space below the navbar */
+  flex-wrap: wrap;
+  /* Ensures responsiveness for multiple cards */
+  gap: 20px;
+  /* Space between cards */
 }
 
 /* Card Styling */
@@ -73,7 +83,8 @@ body {
   position: absolute;
   top: 15px;
   left: 15px;
-  background-color: #f9e79f; /* Light yellow */
+  background-color: #f9e79f;
+  /* Light yellow */
   color: #000;
   font-size: 14px;
   font-weight: bold;
@@ -108,23 +119,28 @@ h1 {
 /* Responsive Design */
 @media (max-width: 768px) {
   .navbar ul {
-    flex-direction: column; /* Stack navbar links vertically */
+    flex-direction: column;
+    /* Stack navbar links vertically */
     gap: 10px;
     padding: 0 10px;
   }
 
   .navbar ul li a {
-    font-size: 14px; /* Smaller font size for navbar links */
+    font-size: 14px;
+    /* Smaller font size for navbar links */
     padding: 8px 15px;
   }
 
   .card-container {
-    gap: 15px; /* Adjust space between cards */
+    gap: 15px;
+    /* Adjust space between cards */
   }
 
   .card {
-    padding: 15px; /* Reduce card padding for smaller screens */
-    max-width: 90%; /* Make cards fit better on smaller screens */
+    padding: 15px;
+    /* Reduce card padding for smaller screens */
+    max-width: 90%;
+    /* Make cards fit better on smaller screens */
   }
 
   h1 {
@@ -142,13 +158,16 @@ h1 {
 
 @media (max-width: 480px) {
   .navbar ul li a {
-    font-size: 12px; /* Reduce font size further for very small screens */
+    font-size: 12px;
+    /* Reduce font size further for very small screens */
     padding: 6px 10px;
   }
 
   .card {
-    padding: 10px; /* Further reduce padding for small screens */
-    max-width: 100%; /* Cards take full width of the viewport */
+    padding: 10px;
+    /* Further reduce padding for small screens */
+    max-width: 100%;
+    /* Cards take full width of the viewport */
   }
 
   h1 {

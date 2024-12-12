@@ -20,7 +20,8 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  width: 100%; /* Ensure it spans the full width */
+  width: 100%;
+  /* Ensure it spans the full width */
 }
 
 .navbar ul {
@@ -46,7 +47,8 @@
 
 .navbar ul li a:hover,
 .navbar ul li a.active {
-  background-color: #007B5F; /* Green hover and active effect */
+  background-color: #007B5F;
+  /* Green hover and active effect */
   border-radius: 5px;
 }
 
@@ -67,7 +69,8 @@ body {
   align-items: center;
   flex-grow: 1;
   width: 100%;
-  padding: 20px; /* Add padding for better spacing on smaller screens */
+  padding: 20px;
+  /* Add padding for better spacing on smaller screens */
 }
 
 /* Book Outer Container */
@@ -114,36 +117,43 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
   .content {
-    padding: 10px; /* Reduce padding on smaller screens */
+    padding: 10px;
+    /* Reduce padding on smaller screens */
   }
 
   .book {
-    padding: 50px; /* Reduce padding on the book container */
+    padding: 50px;
+    /* Reduce padding on the book container */
     border: 8px solid white;
   }
 
   .essay-container {
-    width: 250px; /* Reduce width for smaller screens */
+    width: 250px;
+    /* Reduce width for smaller screens */
     padding: 15px;
   }
 
   .heading {
-    font-size: 1em; /* Adjust font size for smaller screens */
+    font-size: 1em;
+    /* Adjust font size for smaller screens */
     padding: 8px 30px;
     top: -20px;
   }
 
   .essay p {
-    font-size: 0.9em; /* Adjust text size for readability on smaller devices */
+    font-size: 0.9em;
+    /* Adjust text size for readability on smaller devices */
   }
 
   .navbar ul {
-    flex-direction: column; /* Stack navbar items vertically on smaller screens */
+    flex-direction: column;
+    /* Stack navbar items vertically on smaller screens */
     gap: 10px;
   }
 
   .navbar ul li a {
-    font-size: 14px; /* Reduce font size for smaller screens */
+    font-size: 14px;
+    /* Reduce font size for smaller screens */
     padding: 8px 15px;
   }
 }
@@ -169,7 +179,8 @@ body {
   }
 
   .navbar ul {
-    padding-left: 10px; /* Align navbar to the left for very small screens */
+    padding-left: 10px;
+    /* Align navbar to the left for very small screens */
   }
 
   .navbar ul li a {
